@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login with Forgot Password</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #3ad5d2, #ff0090);
+      color: #333333;
+    }
+
+    .login-container {
+      background: plum;
+      width: 500px;
+      padding: 50px 35px 50px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      position: relative;
+    }
+
+    .login-container h2 {
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      color: #ff416c;
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 5px rgba(255, 65, 108, 0.6);
+      user-select: none;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 15px 20px;
+      margin-bottom: 18px;
+      font-size: 17px;
+      border-radius: 12px;
+      border: 2px solid #4a5568;
+      background-color: #f7fafc;
+      transition: border-color 0.3s ease;
+      font-weight: 500;
+      color: #2d3748;
+    }
+
+    .login-form input::placeholder {
+      color: #718096;
+    }
+
+    .login-form input:focus {
+      outline: none;
+      border-color: #ce3158;
+      box-shadow: 0 0 8px #3182ceaa;
+      background-color: #fff;
+      color: #1a202c;
+    }
+
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin: 8px 0 25px 0;
+    }
+
+    .remember-forgot label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #333;
+    }
+
+    .remember-forgot input[type="checkbox"] {
+      accent-color: #ff416c;
+      cursor: pointer;
+    }
+
+    .remember-forgot a {
+      text-decoration: none;
+      color: #3182ce;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .remember-forgot a:hover {
+      color: #2c5282;
+      text-decoration: underline;
+    }
+
+    .login-form button {
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      border: none;
+      border-radius: 30px;
+      padding: 16px 0;
+      width: 100%;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(255, 65, 108, 0.6);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .login-form button:hover {
+      box-shadow: 0 10px 30px rgba(255, 65, 108, 0.8);
+      transform: scale(1.05);
+    }
+
+    .login-form button:active {
+      transform: scale(0.97);
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form class="login-form" action="#" method="post">
+      <input type="text" placeholder="Phone number, username, or email" required />
+      <input type="password" placeholder="Password" required />
+
+      <!-- ✅ Remember Me + Forgot Password inside form -->
+      <div class="remember-forgot">
+        <label>
+          <input type="checkbox" name="remember">
+          Remember Me
+        </label>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+
+</html>
+<footer class="footer">
+  © 2025 Yogesh[demo]trail
+</footer>
